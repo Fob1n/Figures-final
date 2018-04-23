@@ -1,8 +1,14 @@
 #include "header.h"
 
+/*
+ *This function prints a menu, from which you can choose what figure you want to see
+  plus the color the figure should appear in.
+ *Input argument: none
+ *Output argument:
+		int: so that we can use the choice made from the menu
+*/
 int menu(void){
-	int num;
-	int color;
+	int num, color;
 	gotoxy(12,30);
 	printf("1. Draw triangle");
 	gotoxy(13,30);
@@ -32,10 +38,10 @@ int menu(void){
 	printf("7. White");
 
 	gotoxy(18,30);
-	printf("   Choose shape: ");
+	printf("   Choose: ");
 	scanf("%d", &num);
 
-	if(num>0 && num<7){
+	if(num>0&&num<7){
 		gotoxy(19,60);
 		printf("   Choose color: ");
 		scanf("%d", &color);
@@ -52,8 +58,6 @@ int menu(void){
 		setColor(CYAN);
 	else if(color==6)
 		setColor(MAGENTA);
-	else if(color==7)
-		setColor(WHITE);
-	else printf("Invalid value!\n");
+	else setColor(WHITE);
 	return num;
 }

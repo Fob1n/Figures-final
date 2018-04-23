@@ -1,6 +1,11 @@
 #include "header.h"
 
-
+/*
+ *This function printf an intro on the terminal screen, telling us how you can choose
+  between different figures and colors.
+ *Input argument: none
+ *Output argument: none
+*/
 void intro(void){
 	gotoxy(5,20);
 	printf("	This program lets you choose six different shapes to be");

@@ -3,6 +3,7 @@
 //Constant definition
 #define ESC 0x1B
 
+//Definition of colors so that we can set a color by name and not by number
 enum FGCOLORS{BLACK=30,RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE};
 
 
